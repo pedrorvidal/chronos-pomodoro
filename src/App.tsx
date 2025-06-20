@@ -6,7 +6,11 @@ import './styles/theme.css';
 export function App() {
   return (
     <div>
-      <Heading />
+      <Heading attr={123} attr2="string normal">
+        Olá mundo from app 1
+      </Heading>
+      <Heading>Olá mundo from app 2</Heading>
+      <Heading>Olá mundo from app 3</Heading>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi,
         pariatur temporibus eius libero reprehenderit iure dolorum nihil facilis
