@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   font-size: 62.5%;
 }
@@ -13,4 +14,21 @@ body {
   font-size: 1.6rem;
   background: var(--gray-900);
   color: var(--text-default);
+}
+
+#root {
+  width: 100%;
+}
+
+.container-fluid {
+  max-width: auto;
+}
+
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 3.2rem;
 }
