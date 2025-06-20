@@ -1,3 +1,4 @@
+import { TimerIcon } from 'lucide-react';
 import { Heading } from './components/Heading';
 
 import './styles/global.css';
@@ -6,8 +7,11 @@ import './styles/theme.css';
 export function App() {
   return (
     <div>
-      <Heading attr={123} attr2="string normal">
+      <Heading>
         Olá mundo from app 1
+        <button>
+          <TimerIcon size={24} />
+        </button>
       </Heading>
       <Heading>Olá mundo from app 2</Heading>
       <Heading>Olá mundo from app 3</Heading>
