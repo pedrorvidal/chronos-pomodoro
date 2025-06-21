@@ -10,7 +10,6 @@ export function App() {
           <p>LOGO</p>
         </section>
       </Container>
-
       <Container>
         <section>
           <p>MENU</p>
