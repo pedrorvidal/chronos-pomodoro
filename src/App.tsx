@@ -16,8 +16,31 @@ export function App() {
       <Container>
         <Menu />
       </Container>
+
       <Container>
         <Countdown />
+      </Container>
+      <Container>
+        <form className="form" action="">
+          <div className="formrow">
+            <label htmlFor="input">Task</label>
+            <input type="text" name="" id="input" />
+          </div>
+
+          <div className="formrow">
+            <p>Elit fuga velit optio aut</p>
+          </div>
+
+          <div className="formrow">
+            <p>Ciclos</p>
+            <p>0 0 0 0 0 0</p>
+          </div>
+
+          <div className="formrow">
+            <button>Enviar</button>
+          </div>
+
+        </form>
       </Container>
     </>
   );

@@ -19,3 +19,14 @@ body {
 #root {
   width: 100%;
 }
+
+.form  {
+  gap: 2.4rem;
+}
+
+.form, .formrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
