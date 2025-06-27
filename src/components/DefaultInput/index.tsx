@@ -1,11 +1,12 @@
 type DefaultInputProps = {
   id: string;
+  labelText?: string;
 } & React.ComponentProps<'input'>;
 
-export function DefaultInput({ type, id }: DefaultInputProps) {
+export function DefaultInput({ type, id, labelText }: DefaultInputProps) {
   return (
     <>
-      <label htmlFor={id}>Task</label>
+      {labelText ? <label htmlFor={id}>{labelText}</label> : ''}
       <input type={type} name="" id={id} />
     </>
   );
