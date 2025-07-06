@@ -6,7 +6,9 @@ type AvailableThemes = 'dark' | 'light';
 
 export function Menu() {
   const [theme, setTheme] = useState<AvailableThemes>('dark');
-  function handleThemeChange(event) {
+  function handleThemeChange(
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+  ) {
     event.preventDefault();
     setTheme((prevTheme) => {
       const nextTheme = prevTheme === 'dark' ? 'light' : 'dark';
