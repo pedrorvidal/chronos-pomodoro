@@ -6,6 +6,7 @@ import { NotFound } from './pages/NotFound';
 import './styles/global.css';
 import './styles/theme.css';
 import type { TaskStateModel } from './models/TaskStateModel';
+import { TaskContextProvider } from './contexts/TaskContext';
 
 const initialState: TaskStateModel = {
   tasks: [],
@@ -21,6 +22,11 @@ const initialState: TaskStateModel = {
 };
 
 export function App() {
-
-  return <Home />;
+  return (
+    <>
+      <TaskContextProvider>
+        <Home />;
+      </TaskContextProvider>
+    </>
+  );
 }
